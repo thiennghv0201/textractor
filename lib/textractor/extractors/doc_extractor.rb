@@ -15,7 +15,7 @@ module Textractor::Extractors
     def text_from_path(path)
       command = "wvWare -c utf-8 --nographics -x #{wvText_path} #{Escape.shell_single_word(path)}"
       puts command if $DEBUG
-      `#{command}`.strip
+      `#{command}`
     end
 
     private
