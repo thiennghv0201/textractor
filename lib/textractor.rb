@@ -8,7 +8,7 @@ module Textractor
   autoload :Extractors, 'textractor/extractors'
 
   def self.text_from_path(path, options = {})
-    raise FileNotFound unless File.exists?(path)
+    raise FileNotFound unless File.exist?(path)
     content_type    = options.fetch(:content_type) { content_type_for_path(path) }
     extractor       = extractor_for_content_type(content_type)
 
