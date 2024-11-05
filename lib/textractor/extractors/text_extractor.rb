@@ -3,7 +3,7 @@ module Textractor::Extractors
   class TextExtractor
 
     def text_from_path(path)
-      File.read(path)
+      File.read(path, encoding: 'UTF-8')
     end
 
   end
