@@ -13,7 +13,7 @@ module Textractor::Extractors
     end
 
     def text_from_path(path)
-      command = "wvWare -c utf-8 --nographics -x #{wvText_path} #{Escape.shell_single_word(path)}"
+      command = "wvWare -c utf-8 --nographics #{Escape.shell_single_word(path)}"
       puts command if $DEBUG
       `#{command}`
     end
@@ -23,7 +23,5 @@ module Textractor::Extractors
     def wvText_path
       self.class.wvText_path
     end
-
   end
-
 end
