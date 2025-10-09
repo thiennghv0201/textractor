@@ -57,6 +57,7 @@ module Textractor
     register_content_type("application/msword", Extractors::DocExtractor)
     register_content_type("application/vnd.openxmlformats-officedocument.wordprocessingml.document", Extractors::DocxExtractor)
     register_content_type("text/plain", Extractors::TextExtractor)
+    register_content_type("application/vnd.ms-excel", Extractors::XlsxExtractor)
   end
 
   register_basic_types

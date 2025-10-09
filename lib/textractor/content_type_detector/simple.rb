@@ -10,6 +10,8 @@ module Textractor::ContentTypeDetector
         'application/msword'
       when /\.docx$/
         'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+      when /\.xlsx$/
+        'application/vnd.ms-excel'
       when /\.txt$/
         'text/plain'
       end

@@ -6,6 +6,7 @@ module Textractor
     autoload :DocExtractor,  'textractor/extractors/doc_extractor'
     autoload :DocxExtractor, 'textractor/extractors/docx_extractor'
     autoload :TextExtractor, 'textractor/extractors/text_extractor'
+    autoload :XlsxExtractor, 'textractor/extractors/xlsx_extractor'
 
   end
 
